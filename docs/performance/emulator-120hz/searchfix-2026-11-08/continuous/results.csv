@@ -1,0 +1,5 @@
+scenario,trial,ui_passed,trials,actions_or_cycles,window_s,presented,presented_per_window_second,swipe_s,swipe_frames,swipe_fps,swipe_gap_p50_ms,swipe_gap_p95_ms,swipe_gap_p99_ms,swipe_gap_max_ms,app_frames,dropped_app_frames,unmatched_frames,jank_frames,jank_pct,app_finished_late,app_work_p95_ms
+scroll,1,1,1,1,30.002,3563,118.76,30.002,3563,118.76,8.325,10.207,12.072,20.153,3567,0,0,1815,50.88,46,16.211
+scroll,2,1,1,1,30.001,3583,119.43,30.001,3583,119.43,8.352,10.104,11.112,17.807,3587,0,0,3102,86.48,20,16.208
+scroll,3,1,1,1,30.001,3576,119.2,30.001,3576,119.2,8.356,10.277,11.226,22.437,3579,0,0,2414,67.45,21,16.778
+scroll,ALL,3,3,3,90.004,10722,119.13,90.004,10722,119.13,8.344,10.2,11.252,22.437,10733,0,0,7331,68.3,87,16.36

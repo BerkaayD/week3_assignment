@@ -1,0 +1,65 @@
+{
+  "active_display": "mActiveSfDisplayMode=DisplayMode{id=0, width=1080, height=2424, xDpi=420.0, yDpi=420.0, peakRefreshRate=120.00001, vsyncRate=120.00001, appVsyncOffsetNanos=2000000, presentationDeadlineNanos=8333333, supportedHdrTypes=[], group=0}",
+  "render_hz": 120.00001,
+  "sf_period_ns": 8333333,
+  "gpu": "GLES: Google (NVIDIA Corporation), Android Emulator OpenGL ES Translator (NVIDIA GeForce RTX 3060 Laptop GPU/PCIe/SSE2), OpenGL ES 3.1 (4.5.0 NVIDIA 621.01)",
+  "sdk": "36",
+  "scenarios": [
+    {
+      "scenario": "scroll",
+      "trial": 1,
+      "injected_moves": 5277,
+      "final_state": {
+        "activity_visible": true
+      },
+      "functional_ok": true,
+      "guest_boot_markers_ns": {
+        "BEGIN": 273792068800,
+        "END": 303792478600,
+        "swipe 0 begin": 273792068800,
+        "swipe 0 end": 303792478600
+      },
+      "app_frame_interval_ns": 8333333,
+      "actions_or_cycles": 1,
+      "trace": "scroll-1.perfetto-trace.gz"
+    },
+    {
+      "scenario": "scroll",
+      "trial": 2,
+      "injected_moves": 5778,
+      "final_state": {
+        "activity_visible": true
+      },
+      "functional_ok": true,
+      "guest_boot_markers_ns": {
+        "BEGIN": 316420413500,
+        "END": 346421751100,
+        "swipe 0 begin": 316420413500,
+        "swipe 0 end": 346421751100
+      },
+      "app_frame_interval_ns": 8333333,
+      "actions_or_cycles": 1,
+      "trace": "scroll-2.perfetto-trace.gz"
+    },
+    {
+      "scenario": "scroll",
+      "trial": 3,
+      "injected_moves": 6947,
+      "final_state": {
+        "activity_visible": true
+      },
+      "functional_ok": true,
+      "guest_boot_markers_ns": {
+        "BEGIN": 358791074300,
+        "END": 388792039100,
+        "swipe 0 begin": 358791074300,
+        "swipe 0 end": 388792039100
+      },
+      "app_frame_interval_ns": 8333333,
+      "actions_or_cycles": 1,
+      "trace": "scroll-3.perfetto-trace.gz"
+    }
+  ],
+  "requested_seconds": 30,
+  "scroll_input": "continuous drag, 600 px per 1.1 s leg, up to 240 input samples/s"
+}
