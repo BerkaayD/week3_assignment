@@ -44,8 +44,7 @@ class HardwareViewModel(
         .stateIn(
             scope = viewModelScope,
             started = SharingStarted.WhileSubscribed(5_000),
-            // Fixed seed snapshot: no filtering, summation or blocking on Main at startup.
-            // Factory always supplies a fresh repository. Tests pin this snapshot to the seed.
+
             initialValue = initialState,
         )
 
@@ -54,7 +53,6 @@ class HardwareViewModel(
             publishedState.subscriptionCount.map { it > 0 }.distinctUntilChanged().collectLatest { observed ->
                 if (observed) derivedState.collect { derived ->
                     publishedState.update { current ->
-                        // A background result must never rewind a newer text edit or room selection.
                         if (derived.searchQuery == current.searchQuery && derived.selectedRoom == current.selectedRoom) {
                             derived
                         } else current
@@ -65,7 +63,6 @@ class HardwareViewModel(
     }
 
     fun onSearchQueryChanged(text: String) {
-        // TextField must receive its edit by the next frame, without waiting for Default.
         publishedState.update { it.copy(searchQuery = text) }
         searchQuery.value = text
     }
